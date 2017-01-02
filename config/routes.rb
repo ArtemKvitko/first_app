@@ -1,5 +1,6 @@
 FirstApp2::Application.routes.draw do
 
+  get "users/new"
   root 'static_pages#home'
   match '/singup',  to: 'users#new',            via: 'get'
   match '/help',    to: 'static_pages#help',    via: 'get'
